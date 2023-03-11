@@ -8,14 +8,14 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
 
-        './index.html',
+        '.index.html',
 
-        './interacao.js',
+        '.interacao.js',
 
-        './foto1.png',
-        './download.png',
-        './baixados.png',
-        './22962.png',
+        '.foto1.png',
+        '.download.png',
+        '.baixados.png',
+        '.22962.png',
         './icones/128.png',
         './icones/144.png',
         './icones/152.png',
