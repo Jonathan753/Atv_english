@@ -46,7 +46,7 @@ self.addEventListener('fetch', function (event) {
    }());
 
   //Atualizacao cache
-  event.respondWith(
+  /*event.respondWith(
     caches.match(event.request)
       .then(function (response) {
         if (response) {
@@ -54,6 +54,6 @@ self.addEventListener('fetch', function (event) {
         }
         return fetch(event.request);
       })
-  );
+  );*/
 
 });
