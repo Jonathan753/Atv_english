@@ -56,11 +56,16 @@
 
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      
       <h1 class="w3-jumbo"><b>Milca Correia</b></h1>
+      
       <p>O importante não é vencer todos os dias, mas lutar sempre.</p>
-      <meta 
-        name="description" 
-        content="Esse site foi feito para minha amiga.">
+      <img src="/foto1.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+      <a href="" download="Curriculo - Milca Correia.pdf">
+      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+      </a>
     </header>
 
     <!-- About Section -->
@@ -68,7 +73,7 @@
       <h2>Sobre Mim</h2>
       <hr class="w3-opacity">
       <p>
-          Sou a Milquinha, faço engenharia. E estou indo pro meu segundo período . Amo ler e conhecer novos lugares e sempre estou aberta a novos conhecimentos. Tenho 21 e espero o melhor pro próximos que viram
+          Sou a Milquinha, tenho 21 anos, faço engenharia e estou indo para o segundo período. Amo ler e conhecer novos lugares e sempre estou aberta a novos conhecimentos.
       </p>
 
       
@@ -76,15 +81,15 @@
         <hr class="w3-opacity">
         <p class="w3-wide">Engenharia ABI - UFPE</p>
         <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:10%">10%</div>
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:20%">20%</div>
         </div>
         <p class="w3-wide">Inglês - UPE</p>
         <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
         </div>
         <p class="w3-wide">AutoCad - ESTUDAR</p>
         <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:25%">25%</div>
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
         </div><br>
       
     
@@ -104,23 +109,45 @@
     <!-- End About Section -->
     </div>
 
-    <!-- Contact Section -->
+
+          <!-- Contact Section -->
     <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-      <h2>Entre em contato comigo</h2>
+      <h2>Meus Contatos</h2>
       <hr class="w3-opacity">
 
       <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Jaboatão dos Guararapes, PE</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Telefone: 81 98712-3186</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: milca.correia@ufpe.br</p>
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.google.com/maps/place/R.+Deão+Faria,+178+-+Imbiribeira,+Recife+-+PE,+51170-250/@-8.0929041,-34.9128159,17z/data=!4m14!1m7!3m6!1s0x7ab1ee727d03abb:0x5760c9814f998f67!2sR.+Deão+Faria,+178+-+Imbiribeira,+Recife+-+PE,+51170-250!8m2!3d-8.0929041!4d-34.9128159!16s%2Fg%2F11fyzby9gj!3m5!1s0x7ab1ee727d03abb:0x5760c9814f998f67!8m2!3d-8.0929041!4d-34.9128159!16s%2Fg%2F11fyzby9gj"> Maps</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><a href="tel:+55 81 98712-3186"> Telefone</a></p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i><a href="mailto:milca.correia@ufpe.br"> Email </a></p>
+        <p><i class="fa fa-download fa-fw w3-xxlarge w3-margin-right"></i><a href="" download="Curriculo - Milca Correia.pdf">Curriculo</a></p>  
+        <br>
       </div>
-      
-      <!-- Image of location/map -->
-      
     
-  <!-- END PAGE CONTENT -->
-  </div>
 
+    <p>Vamos entrar em contato. Me mande uma mensagem:</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+        </button>
+      </p>
+    </form>
+  </div>
+      <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin: -24px">
+        <a href="https://www.facebook.com/milca.ester.73"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/estermilca/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <a href="https://twitter.com/miilkks"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/ruben-sostenes-192704231/"><i class="fa fa-linkedin w3-hover-opacity"></i></footer></a>
+        <!-- End footer -->
+      </footer>
+    
+  </div>
+  
   <script src="intarecao.js"></script>
 
 </body>
