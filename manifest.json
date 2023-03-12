@@ -69,8 +69,20 @@
       "type": "image/png"
     }
   ],
+  "share_target":[],
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "shortcuts": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Send Message",
+      "url": "/new-message",
+      "description": "Open a chat with another user and send a message to them."
+    }
+  ]
 }
