@@ -39,13 +39,13 @@
 
   <!-- Page Content -->
   <div class="w3-main w3-padding-large" style="margin-left:40%">
-
+      
     <!-- Menu icon to open sidebar -->
     <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-      
+      A memória do seu dispositivo é de <b id="result">unknown</b> GiB.
       <h1 class="w3-jumbo"><b>Milca Correia</b></h1>
       
       <p>O importante não é vencer todos os dias, mas lutar sempre.</p>
@@ -110,8 +110,21 @@
         <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i><a href="mailto:milca.correia@ufpe.br"> Email </a></p>
         <p><i class="fa fa-download fa-fw w3-xxlarge w3-margin-right"></i><a href="https://drive.google.com/file/d/1ULoqx3QOrEl59WA2iqkpE4R_Z_ItTJbY/view?usp=sharing">Curriculo</a></p>  
         <br>
+
       </div>
     
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+        <h2>Saiba a sua Latitute e Longitude</h2>
+        <hr class="w3-opacity">
+  
+        <button class="w3-button w3-light-grey w3-padding-large" id="askButton">
+          <i class="fa fa-paper-plane"></i>
+          Localização
+          
+        </button>
+        
+        <div id="target"></div>
+      </div>
 
       <p>Vamos entrar em contato. Me mande uma mensagem:</p>
       <form name="contact" method="POST" data-netlify="true">
@@ -126,7 +139,7 @@
         </p>
       </form>
     </div>
-      
+          
       <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin: -24px">
         <a href="//www.facebook.com/milca.ester.73"> <i class="fa fa-facebook-official w3-hover-opacity">  ‎ </i></a>
         <a href="//www.instagram.com/estermilca/"> <i class="fa fa-instagram w3-hover-opacity"> ‎ </i></a>
@@ -143,10 +156,7 @@
     const el = document.createElement('pwa-update');
     document.body.appendChild(el);
   </script>
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
+
   </script>
 </body>
 </html>
