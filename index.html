@@ -8,10 +8,10 @@
     <meta name="theme-color" content="#000000">
     <link rel="apple-touch-icon" sizes="192x192" href="icones/android-launchericon-192-192.png">
 
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <noscript><link href="nocript.css" rel="stylesheet"></noscript>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" media="print">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="print">
+    <link href="main.css" rel="stylesheet" media="print">
     <link rel="icon" href="download.png">
 
     <link rel="manifest" href="manifest.json">
@@ -140,8 +140,8 @@
     
   </div>
   
-  <script src="intarecao.js"></script>
-  <script type="module">
+  <script src="intarecao.js" defer async></script>
+  <script type="module" defer async >
     import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
   const el = document.createElement('pwa-update');
   document.body.appendChild(el);
