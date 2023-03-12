@@ -34,6 +34,8 @@
       <a href="#cursos" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Cursos</a>
       <a href="#experiencias" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Experiências</a>
       <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contatos</a>
+      <a href="#fale" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Fale Conosco</a>
+      <a href="#localiza" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Localização</a>
     </div>
   </nav>
 
@@ -100,7 +102,7 @@
 
 
           <!-- Contact Section -->
-    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" >
       <h2>Meus Contatos</h2>
       <hr class="w3-opacity">
 
@@ -109,23 +111,12 @@
         <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><a href="tel:+55 81 98712-3186"> Telefone </a></p>
         <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i><a href="mailto:milca.correia@ufpe.br"> Email </a></p>
         <p><i class="fa fa-download fa-fw w3-xxlarge w3-margin-right"></i><a href="https://drive.google.com/file/d/1ULoqx3QOrEl59WA2iqkpE4R_Z_ItTJbY/view?usp=sharing">Curriculo</a></p>  
-        <br>
-
       </div>
-    
-    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-        <h2>Saiba a sua Latitute e Longitude</h2>
-        <hr class="w3-opacity">
-  
-        <button class="w3-button w3-light-grey w3-padding-large" id="askButton">
-          <i class="fa fa-paper-plane"></i>
-          Localização
-          
-        </button>
-        
-        <div id="target"></div>
-      </div>
+    </div>
 
+
+    <div class="w3-padding-32 w3-content w3-text-grey" id="fale" >
+      <h2>Fale Conosco</h2>
       <p>Vamos entrar em contato. Me mande uma mensagem:</p>
       <form name="contact" method="POST" data-netlify="true">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
@@ -139,7 +130,20 @@
         </p>
       </form>
     </div>
-          
+    
+    <div id="localiza" class="w3-padding-32 w3-content w3-text-grey"  style="margin-bottom:64px">
+      <h2>Saiba a sua Latitute e Longitude</h2>
+      <hr class="w3-opacity">
+
+      <button class="w3-button w3-light-grey w3-padding-large" id="askButton">
+        <i class="fa fa-paper-plane"></i>
+        Localização
+        
+      </button>
+      
+      <div id="target"></div>
+    </div>
+
       <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin: -24px">
         <a href="//www.facebook.com/milca.ester.73"> <i class="fa fa-facebook-official w3-hover-opacity">  ‎ </i></a>
         <a href="//www.instagram.com/estermilca/"> <i class="fa fa-instagram w3-hover-opacity"> ‎ </i></a>
