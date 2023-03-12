@@ -13,6 +13,28 @@
 
 
 <link rel="manifest" href="manifest.json">
+
+
+<meta name="description" content="Di2Win">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#DC338A">
+		<meta name="apple-mobile-web-app-title" content="Weather App">
+		<link rel="apple-touch-icon" href="assets/AppIcons/144.png">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/AppIcons/152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/AppIcons/180.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="assets/AppIcons/196.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#DC338A">
+		<link href="assets/images/ios/ipad.png" sizes="3200x4267" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/ipadpro.png" sizes="3475x4633" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/ipadpro2.png" sizes="4267x5692" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/Iphone6Plus.png" sizes="2588x4600" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/Iphone7.png" sizes="1563x2779" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/IphoneSE-05.png" sizes="1333x2367" rel="apple-touch-startup-image" />
+		<link href="assets/images/ios/IphoneX-05.png" sizes="2344x5075" rel="apple-touch-startup-image" />
+	  
+
 <style>
   
   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -151,11 +173,12 @@
   
   <script src="intarecao.js"></script>
   <script src="service-worker.js"></script>
-  <script type="module">
-    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-  const el = document.createElement('pwa-update');
-  document.body.appendChild(el);
-</script>
+	<script src="assets/js/main.js"></script>
+		<script type="module">
+				import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+			const el = document.createElement('pwa-update');
+			document.body.appendChild(el);
+		</script>
 
 </body>
 </html>
