@@ -9,7 +9,7 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-  new RegExp('https://milca-ester.netlify.app/'),
+  new RegExp('/*'),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: CACHE
   })
