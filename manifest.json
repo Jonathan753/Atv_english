@@ -1,57 +1,41 @@
 {
-    "name": "APPMilca",
-    "short_name": "MILCA",
-    "icons": [
-      {
-        "src": "assets/images/AppIcons/29.png",
-        "sizes": "29x29",
+  "name": "APP-MILCA",
+  "short_name": "MILCA",
+  "icons": [
+    {
+      "src": "icones/48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+        "src": "icones/72.png",
+        "sizes": "72x72",
         "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/40.png",
-        "sizes": "40x40",
+    },
+    {
+        "src": "icones/96.png",
+        "sizes": "96x96",
         "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/57.png",
-        "sizes": "57x57",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/58.png",
-        "sizes": "58x58",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/60.png",
-        "sizes": "60x60",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/80.png",
-        "sizes": "80x80",
-        "type": "image/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "assets/images/AppIcons/87.png",
-        "sizes": "87x87",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/114.png",
-        "sizes": "114x114",
-        "type": "image/png"
-      },
-      {
-        "src": "assets/images/AppIcons/512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#040003",
-    "theme_color": "#DC338A"
-  }
-  
+    },
+    {
+      "src": "icones/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icones/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icones/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}

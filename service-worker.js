@@ -1,16 +1,57 @@
-const CACHE = "pwabuilder-offline-v2";
+var cacheName = 'pwaTeste+-v1.2';
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+self.addEventListener('install', event => {
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
+  self.skipWaiting();
+
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => cache.addAll([
+
+        '/index.html',
+
+        '/interacao.js',
+
+        '/foto1.png',
+        '/download.png',
+        '/baixados.png',
+        '/22962.png',
+        '/icones/48.png',
+        '/icones/72.png',
+        '/icones/96.png',
+        '/icones/144.png',
+        '/icones/192.png',
+        '/icones/512.png',
+        
+      ]))
+  );
+});
+
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
   }
 });
 
-workbox.routing.registerRoute(
-  new RegExp('/*'),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
-  })
-);
+self.addEventListener('fetch', function (event) {
+  //Atualizacao internet
+  event.respondWith(async function () {
+     try {
+       return await fetch(event.request);
+     } catch (err) {
+       return caches.match(event.request);
+     }
+   }());
+
+  //Atualizacao cache
+  /*event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );*/
+
+});
