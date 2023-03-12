@@ -23,6 +23,7 @@
     "type": "image/png",
     "description": "PWABuilder Home Screen"
   },
+
   {
     "src": "https://www.pwabuilder.com/assets/screenshots/screen3.png",
     "sizes": "2880x1800",
@@ -35,33 +36,33 @@
   "short_name": "MILCA",
   "icons": [
     {
-      "src": "icones/android-launcheridon-48-48.png",
+      "src": "icones/android-launchericon-48-48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-        "src": "icones/android-launcheridon-72-72.png",
+        "src": "icones/android-launchericon-72-72.png",
         "sizes": "72x72",
         "type": "image/png"
     },
     {
-        "src": "icones/android-launcheridon-96-96.png",
+        "src": "icones/android-launchericon-96-96.png",
         "sizes": "96x96",
         "type": "image/png"
     },
     {
-      "src": "icones/android-launcheridon-144-144.png",
+      "src": "icones/android-launchericon-144-144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "icones/android-launcheridon-192-192.png",
+      "src": "icones/android-launchericon-192-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icones/android-launcheridon-512-512.png",
+      "src": "icones/android-launchericon-512-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
