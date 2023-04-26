@@ -11,7 +11,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 }
 
 iframe {
-  width:560;
+  width: 560;
   height: 315;
-  text-align: center; 
+  margin: auto auto auto auto; 
 }
